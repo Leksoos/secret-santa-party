@@ -41,7 +41,7 @@
 В терминале перейдите в папку проекта и запустите:
 
 ```bash
-cd /Users/leksoos/secret-santa-party
+cd /Users/secret-santa-party
 npm run dev
 ```
 
