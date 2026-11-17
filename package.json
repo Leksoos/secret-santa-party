@@ -1,0 +1,57 @@
+{
+  "name": "secret-santa-party",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "start": "tsx server/index.ts",
+    "dev": "concurrently -k -n \"server,client\" -c \"blue,magenta\" \"tsx server/index.ts\" \"vite\"",
+    "server": "tsx server/index.ts",
+    "client": "vite",
+    "build": "vite build",
+    "test": "tsx test/matcher.test.ts && tsx test/privacy.test.ts && tsx test/declension.test.ts && tsx test/voting-rules.test.ts && tsx test/timer-sync.test.ts && tsx test/quiz-manager.test.ts && tsx test/quiz-flow.test.ts && tsx test/tv-party-e2e.test.ts && tsx test/party-readiness.test.ts && tsx test/checkin-tv.test.ts && tsx test/network-info.test.ts && tsx test/database.test.ts && tsx test/persistence-e2e.test.ts",
+    "test:e2e": "tsx test/tv-party-e2e.test.ts"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.9.4",
+    "clsx": "^2.1.1",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.1",
+    "express": "^5.2.1",
+    "framer-motion": "^13.4.0",
+    "howler": "^2.2.4",
+    "lucide-react": "^1.47.0",
+    "multer": "^2.4.0",
+    "qrcode": "^1.5.4",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "socket.io": "^4.8.3",
+    "socket.io-client": "^4.8.3",
+    "tailwind-merge": "^3.7.0",
+    "uuid": "^14.0.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/howler": "^2.2.13",
+    "@types/multer": "^2.2.0",
+    "@types/node": "^26.6.2",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/uuid": "^10.0.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "autoprefixer": "^10.6.1",
+    "concurrently": "^10.0.5",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0"
+  }
+}

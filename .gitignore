@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Production build
+dist/
+
+# Local database files
+data/*.db
+data/*.db-wal
+data/*.db-shm
+data/*.db-journal
+
+# Uploads (ignore user uploaded files, keep folder)
+uploads/*
+!uploads/.gitkeep
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+
+# Temporary files & logs
+.DS_Store
+*.log
+.tmp/
+scratch/
+.agents/
+
+# Editor / IDE
+.vscode/
+.idea/
